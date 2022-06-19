@@ -5,8 +5,17 @@ public class Main{
         Random rd = new Random();
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("9以下の整数を入力してください");
+        // Nに1~9の整数が格納されるまで繰り返す
+        System.out.println("1~9の整数を入力してください");
         int N = sc.nextInt();
+        while(true){
+            System.out.println("1~9の整数を入力してください");
+            N = sc.nextInt();
+            if(0<N && N<10){
+                break;
+            }
+        }
+        
         int[] nums=new int[N];
         int cnt=0;
         while(cnt<N){
