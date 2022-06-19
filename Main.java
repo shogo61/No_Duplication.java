@@ -9,11 +9,11 @@ public class Main{
         System.out.println("1~9の整数を入力してください");
         int N = sc.nextInt();
         while(true){
-            System.out.println("1~9の整数を入力してください");
-            N = sc.nextInt();
             if(0<N && N<10){
                 break;
             }
+            System.out.println("1~9の整数を入力してください");
+            N = sc.nextInt();
         }
         
         int[] nums=new int[N];
